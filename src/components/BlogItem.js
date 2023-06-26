@@ -6,7 +6,8 @@ import '../index.css';
 const BlogItem = ({blog, content}) => {
     return(
         <div className="blogItem-wrap">
-
+            <Link></Link>
+            <Chip></Chip>
         </div>
     );
 };
