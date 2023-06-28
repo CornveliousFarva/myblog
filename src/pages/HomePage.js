@@ -9,6 +9,12 @@ const HomePage = ({data}) => {
     const [blogs, setBlogs] = useState([]);
     const [searchKey, setSearchKey] = useState('');
 
+    useEffect(() => {
+        blogList().then((res) => {
+            setBlogs(res);
+        })
+    } , []);
+
     // Search submit
     const handleSearchBar = (e) => {
         e.preventDefault();
